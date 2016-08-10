@@ -4,9 +4,9 @@ MAINTAINER Kelly Leahy
 
 WORKDIR "/opt"
 
-ADD .docker_build/go-main /opt/bin/go-main
+ADD .docker_build/go-getting-started /opt/bin/go-getting-started
 ADD ./templates /opt/templates
 ADD ./static /opt/static
 
-CMD ["/opt/bin/go-main"]
+CMD ["/opt/bin/go-getting-started"]
 

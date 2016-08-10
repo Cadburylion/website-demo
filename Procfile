@@ -1,1 +1,1 @@
-web: go-main
+web: go-getting-started
