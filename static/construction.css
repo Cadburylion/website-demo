@@ -1,0 +1,98 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html {
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	height:100%;
+}
+body {
+	background-repeat:repeat-y;
+	background-position:center;
+	font-family: 'Muli', sans-serif;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	padding:0;
+	margin:0 0 0 0;
+	font-size:12pt;
+	color:#0063B0;
+	height:100%;
+	}
+
+body a {
+	text-decoration:none;
+	color:inherit;
+}
+
+#wrapper {
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	margin-bottom:-115px;
+}
+
+#header {
+	background-color:#0063B0;
+	color:yellow;
+	width:100%;
+	margin:0px auto 0px auto;
+	height:350px;
+}
+
+#logo {
+//	background-color:green;
+	width:500px;
+	height:250px;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+	float:none;
+	padding-top:100px;
+}
+
+
+#content {
+	width:900px;
+	margin:auto;
+	margin-top:0px;
+	border-top:#FAB821 solid 5px;
+	font-weight:300;
+}
+
+
+#footer {
+	width:100%;
+	height:100px;
+	background-color:#E6E6E6;
+	clear:both;
+//	margin-top:-80px;
+	margin:0px;
+	padding:0px;
+}
+
+#footercontent {
+	width:900px;
+	height:60px;
+	margin:auto;
+	font-size:19.75px;
+	line-height:1.5em;
+	font-weight:400;
+//	color: #FAB821;
+	color:#E1A71C;
+}
+#footercontent p {
+	padding-top:15px;
+}
+	
+
+// yellow = #FAB821
+// dk yellow = #E1A71C
+// blue = #0063B0
+
