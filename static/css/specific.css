@@ -25,25 +25,40 @@
       linear-gradient(to top, white, rgba(255, 255, 255, 0)) 1 100%;
 }
 
-@media (max-width:1440px) {
+@media (max-width:991px) {
 .leftside {
 	height:auto;
-	color:red;
+	color:white;
 	padding:0;
 }
 .bluebg {
 	position:absolute;
 	width:100%;
-	background-color:red;
+	background-color:#0063af;
 	top: 0;
 	left: 0;
 	padding: 0; /* Cover the full screen width */
 	height:auto;
 }
+h1 {
+	font-size:42px;
+	line-height:44px;
+	font-family: 'Muli', sans-serif;
+	font-weight:400;
+	color:blue;
+	text-align:center;
+	margin-bottom:24px;
 }
-	/*background-color:#0063af;*/
+.leftside p {
+	font-size:18px;
+	line-height:24px;
+	font-family: 'Muli', sans-serif;
+	font-weight:400;
+	color:blue;
+}
+}
 
-@media (min-width:1441px) {
+@media (min-width:992px) {
 .leftside {
 	position:fixed;
 	height:100%;
@@ -64,13 +79,6 @@
 	padding: 0; /* Cover the full screen width */
 	height:100%;
 }
-}
-
-.logo {
-	text-align:center;
-	margin-top:60px;
-}
-
 h1 {
 	font-size:42px;
 	line-height:44px;
@@ -81,6 +89,20 @@ h1 {
 	margin-bottom:24px;
 }
 
+.leftside p {
+	font-size:18px;
+	line-height:24px;
+	font-family: 'Muli', sans-serif;
+	font-weight:400;
+	color:white;
+}
+}
+
+.logo {
+	text-align:center;
+	margin-top:60px;
+}
+
 h2 {
 	font-size:24px;
 	line-height:30px;
@@ -89,14 +111,6 @@ h2 {
 	color:#f9b721;
 	text-align:center;
 	margin-bottom:24px;
-}
-
-.leftside p {
-	font-size:18px;
-	line-height:24px;
-	font-family: 'Muli', sans-serif;
-	font-weight:400;
-	color:white;
 }
 
 .justify-cen {
@@ -115,8 +129,8 @@ h2 {
 	width:282px;
 	margin:30px auto 60px auto;
 }
-@media (max-width:1440px) {ul.icons {margin-bottom:60px;}}
-@media (min-width:1441px) {ul.icons {margin-bottom:15px;}}
+@media (max-width:991px) {ul.icons {margin-bottom:60px;}}
+@media (min-width:992px) {ul.icons {margin-bottom:15px;}}
 
 .icons li {
     float:left;
@@ -200,8 +214,8 @@ h3 {
 }
 
 .navbar-fixed-bottom p {	text-align:center;}
-@media (max-width:1440px) {.navbar-fixed-bottom {position:relative;}}
-@media (min-width:1441px) {.navbar-fixed-bottom {position:fixed;}}
+@media (max-width:991px) {.navbar-fixed-bottom {position:relative;}}
+@media (min-width:992px) {.navbar-fixed-bottom {position:fixed;}}
 
 
 	
