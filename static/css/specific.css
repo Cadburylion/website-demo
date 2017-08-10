@@ -222,4 +222,5 @@ h3 {
     z-index: 100;
 }
 
+@media (max-width:991px) {.len-logo {background-color: #0063af;}}
 
