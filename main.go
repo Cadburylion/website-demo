@@ -29,7 +29,7 @@ func main() {
         log.Fatal(err)
     }
     for _, file := range files {
-        router.Static(fmt.Sprintf("/%s", file.Name()), fmt.Sprintf("static/fav/%s", file.Name()))
+        router.StaticFile(fmt.Sprintf("/%s", file.Name()), fmt.Sprintf("static/fav/%s", file.Name()))
     }
 
     router.GET("/", func(c *gin.Context) {
