@@ -217,6 +217,9 @@ h3 {
 @media (max-width:991px) {.navbar-fixed-bottom {position:relative;}}
 @media (min-width:992px) {.navbar-fixed-bottom {position:fixed;}}
 
-
+.dot {
+    position:relative;
+    z-index: 100;
+}
 
 
