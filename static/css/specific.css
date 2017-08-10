@@ -28,19 +28,20 @@
 @media (max-width:1440px) {
 .leftside {
 	height:auto;
-	color:#0063af;
+	color:red;
 	padding:0;
 }
 .bluebg {
 	position:absolute;
 	width:100%;
-	background-color:#0063af;
+	background-color:red;
 	top: 0;
 	left: 0;
 	padding: 0; /* Cover the full screen width */
 	height:auto;
 }
 }
+	/*background-color:#0063af;*/
 
 @media (min-width:1441px) {
 .leftside {
