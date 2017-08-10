@@ -25,6 +25,9 @@ func main() {
     router.Static("/css", "static/css")
 
     files, err := ioutil.ReadDir("static/fav")
+    if err != nil {
+        log.Fatal(err)
+    }
     for _, file := range files {
         router.Static(fmt.Sprintf("/%s", file.Name()), fmt.Sprintf("static/fav/%s", file.Name()))
     }
