@@ -8,7 +8,6 @@
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  font-weight: 900;
   background: #0C63AE;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -18,10 +17,12 @@
 }
 .blog-header > h1 {
   color: #F9B725 !important;
+  font-weight: 600;
 }
 .blog-header > a {
   color: white;
   font-size: 18px;
+  font-weight: 600;
 }
 
 .blog-content {

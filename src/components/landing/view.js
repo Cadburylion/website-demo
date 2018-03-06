@@ -15,7 +15,7 @@ const View = (props) => {
                 <div className="container-fluid navbar-fixed-top">
                   <div className="col-xs-12 col-md-6">
                     <div className="hidden-xs hidden-sm hidden-md col-lg-3"></div>
-                    <div className="col-xs-12 col-lg-9" style={{backgroundColor:'#f9b721', height:'30px', textAlign:'center', paddingTop: '2px'}}>
+                    <div className="col-xs-12 col-lg-9" style={{backgroundColor:'#97BDDC', height:'30px', textAlign:'center', paddingTop: '2px'}}>
                       <div style={{display: 'flex', flexFlow: 'row nowrap', alignItems: 'center', justifyContent: 'space-around', fontSize:'12px',fontFamily:'Muli sans-serif'}}>
                         <a href='#services' style={{color: '#0C63AE', fontSize: '18px', fontFamily: 'Muli, sans-serif', marginBottom: '10px', textDecoration: 'none'}}>Services</a>
                         <a href='#technologies' style={{color: '#0C63AE', fontSize: '18px', fontFamily: 'Muli, sans-serif', marginBottom: '10px', textDecoration: 'none'}}>Technologies</a>
