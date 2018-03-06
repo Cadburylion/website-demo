@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import ScrollableAnchor from 'react-scrollable-anchor';
 
 const View = (props) => {
@@ -20,7 +21,7 @@ const View = (props) => {
                         <a href='#technologies' style={{color: '#0C63AE', fontSize: '18px', fontFamily: 'Muli, sans-serif', marginBottom: '10px', textDecoration: 'none'}}>Technologies</a>
                         <a href='#customers' style={{color: '#0C63AE', fontSize: '18px', fontFamily: 'Muli, sans-serif', marginBottom: '10px', textDecoration: 'none'}}>Customers</a>
                         <a href='#team' style={{color: '#0C63AE', fontSize: '18px', fontFamily: 'Muli, sans-serif', marginBottom: '10px', textDecoration: 'none'}}>Team</a>
-                        <a href='#services' style={{color: '#0C63AE', fontSize: '18px', fontFamily: 'Muli, sans-serif', marginBottom: '10px', textDecoration: 'none'}}>Blog</a>
+                        <Link to='/blog' style={{color: '#0C63AE', fontSize: '18px', fontFamily: 'Muli, sans-serif', marginBottom: '10px', textDecoration: 'none'}}>Blog</Link>
                       </div>
                     </div>
                   </div>
