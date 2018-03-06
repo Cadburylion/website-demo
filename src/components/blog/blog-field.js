@@ -6,11 +6,13 @@ import './style.css';
 
 const BlogField = ({title, articles}) => {
 
-  const generateArticles = () => {
-    return articles.map((article, index) =>
+  const generateColumn = (start, end) => {
+    let selection = articles.slice(start, end);
+    return selection.map((article, index) =>
       <Article
         key={article.pubDate + '-' + index}
         article={article}
+        number={index + 1}
         time={<TimeFormat time={article.pubDate}/>}
       />
     );
@@ -26,7 +28,15 @@ const BlogField = ({title, articles}) => {
         <Link to='/'>Home</Link>
       </div>
       <div className='blog-content'>
-        {generateArticles()}
+        <div className='col-1'>
+          {generateColumn(0, 2)}
+        </div>
+        <div className='col-2'>
+          {generateColumn(2, 4)}
+        </div>
+        <div className='col-3'>
+          {generateColumn(4, 6)}
+        </div>
       </div>
     </div>
   );
