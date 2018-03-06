@@ -1,18 +1,34 @@
 .blog-field {
   font-family: 'Muli', sans-serif;
+  /*background: #0C63AE;*/
+  background: white;
 }
 
-.blog-title {
-  color: black;
-  margin-top: 50px;
+.blog-header {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  font-weight: 900;
+  background: #0C63AE;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  border-bottom: 8px solid #F9B725;
+}
+.blog-header > h1 {
+  color: #F9B725 !important;
+}
+.blog-header > a {
+  color: white;
+  font-size: 18px;
 }
 
 .blog-content {
   height: 100%;
   max-width: 1280px;
   margin: 0 auto;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
@@ -26,6 +42,7 @@
   position: relative;
   display: grid;
   width: 380px; height: 400px;
+  background: white;
   -webkit-box-shadow: 0 4px 10px 2px rgba(0, 0, 0, 0.2);
   box-shadow: 0 4px 10px 2px rgba(0, 0, 0, 0.2);
   margin-top: 25px;
@@ -43,7 +60,9 @@
   position: absolute;
   top: 0; left: -55px;
   width: 45px;
-  background: white;
+  /*background: white;*/
+  color: white;
+  background: #F9B725;
   font-size: 1.5em;
   text-align: center;
   padding: 0.25em;
@@ -63,6 +82,7 @@
 .article-title {
   font-size: 1.5em;
   padding: 0.5em;
+  text-align: center;
 }
 
 .blog-link {

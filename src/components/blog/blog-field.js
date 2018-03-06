@@ -1,5 +1,6 @@
 import React from 'react';
 import Article from './article.js';
+import {Link} from 'react-router-dom';
 import TimeFormat from './time-format.js';
 import './style.css';
 
@@ -17,9 +18,10 @@ const BlogField = ({title, articles}) => {
 
   return (
     <div className='blog-field'>
-      <h1 className='blog-title'>
-        {title}
-      </h1>
+      <div className='blog-header'>
+        <h1>Lenalysis Consulting Services - Blog</h1>
+        <Link to='/'>Home</Link>
+      </div>
       <div className='blog-content'>
         {generateArticles()}
       </div>

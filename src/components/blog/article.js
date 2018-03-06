@@ -2,7 +2,7 @@ import React from 'react';
 import './style.css';
 
 const Article = ({article, time}) => {
-  article ? console.log('pubDate: ', article.pubDate) : '';
+  // article ? console.log('pubDate: ', article.pubDate) : '';
   return (
     <a href={article.link} target='_#' className='blog-wrapper'>
       <div className='blog-image'>
