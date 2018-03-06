@@ -19,7 +19,10 @@ const BlogField = ({title, articles}) => {
   return (
     <div className='blog-field'>
       <div className='blog-header'>
-        <h1>Lenalysis Consulting Services - Blog</h1>
+        <div className='inline-field'>
+          <img src={require('../../static/images/Lenalysis_Logo.png')} />
+          <h1>Blog</h1>
+        </div>
         <Link to='/'>Home</Link>
       </div>
       <div className='blog-content'>
