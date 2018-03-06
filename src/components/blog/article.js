@@ -1,8 +1,8 @@
-import React from 'react'
-import './style.scss'
+import React from 'react';
+import './style.scss';
 
 const Article = ({article, time}) => {
-  article ? console.log('pubDate: ', article.pubDate) : ''
+  article ? console.log('pubDate: ', article.pubDate) : '';
   return (
     <a href={article.link} target='_#' className='blog-wrapper'>
       <div className='blog-image'>
@@ -11,7 +11,7 @@ const Article = ({article, time}) => {
       </div>
       <div className='article-title'>{article.title}</div>
     </a>
-  )
-}
+  );
+};
 
-export default Article
+export default Article;
