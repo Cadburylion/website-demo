@@ -5,7 +5,7 @@ const Article = ({article, time, number}) => {
   // article ? console.log('pubDate: ', article.pubDate) : '';
   return (
     <div id={`article-${number}`}>
-      <a href={article.link} className='article-wrapper'>
+      <a href={article.link}>
         <figure style={{backgroundImage: `url(${article.thumbnail})`}} alt='article thumbnail'>{time}</figure>
         <footer>
           <figcaption>
