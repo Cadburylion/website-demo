@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.scss';
+import './style.css';
 
 const Article = ({article, time}) => {
   article ? console.log('pubDate: ', article.pubDate) : '';

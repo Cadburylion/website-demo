@@ -1,7 +1,7 @@
 import React from 'react';
 import Article from './article.js';
 import TimeFormat from './time-format.js';
-import './style.scss';
+import './style.css';
 
 const BlogField = ({title, articles}) => {
 
