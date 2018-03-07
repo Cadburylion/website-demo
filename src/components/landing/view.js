@@ -45,9 +45,9 @@ const View = (props) => {
                   <img src={require('../../static/images/Lenalysis_Logo.png')} className="img-responsive len-logo" alt="sample Logo" style={{margin:'48px auto'}} />
                   <h1>Results-oriented software and cloud consulting services</h1>
                   <h2>Lenalysis provides innovative consulting services to enterprises and start-ups.</h2>
-                  <p className="justify-cen">{`Lenalysis is a software consultancy specializing in custom software development, cloud, system integration, agile, and DevOps." +
-                  "Lenalysis can provide expert services others can't because of our background in large-scale enterprise software, actuarial, accounting, and financial systems engineering." +
-                  "If you are looking for help with a new complex solution, in optimizing your software product delivery, or in defining your architectural vision and strategy, Lenalysis can help.`}
+                  <p className="justify-cen">{`Lenalysis is a software consultancy specializing in custom software development, cloud, system integration, agile, and DevOps.
+                  Lenalysis can provide expert services others can't because of our background in large-scale enterprise software, actuarial, accounting, and financial systems engineering.
+                  If you are looking for help with a new complex solution, in optimizing your software product delivery, or in defining your architectural vision and strategy, Lenalysis can help.`}
                   </p>
                 </div>
                 <div className="col-xs-1"></div>
