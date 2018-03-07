@@ -46,13 +46,14 @@ const View = (props) => {
                     <li><a href="mailto:kelly@lenalysis.com"><img src="./static/images/icon-email.png" alt="map icon" className="img-responsive" /></a></li>
                   </ul>
                 </div>
-                <div className="col-xs-1">.</div>
+
               </div>
             </div>
           </div>
 
 
           <div className="col-xs-12 col-md-6 col-md-offset-6 rightside">
+          
             <div className="row">
               <div className="col-xs-12 col-lg-9">
                 <div className="section">Services</div>
