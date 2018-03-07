@@ -1,7 +1,5 @@
 import React from 'react';
-import {Link, NavLink} from 'react-router-dom';
 import ScrollableAnchor, {configureAnchors} from 'react-scrollable-anchor';
-import Waypoint from 'react-waypoint';
 import Scrollspy from 'react-scrollspy';
 
 import './style.css';
@@ -127,7 +125,7 @@ const View = (props) => {
 
                   <div className="section">Technologies</div>
 
-                  <img src="./static/images/computer-with-code.jpg" alt="Photo of Computer with Code" className="img-responsive"  />
+                  <img src="./static/images/computer-with-code.jpg" alt="Computer with Code" className="img-responsive"  />
                 </div>
               </div>
               <div className="row" style={{height:'10px'}}>
@@ -147,12 +145,12 @@ const View = (props) => {
                   <p className="justify-cen">We are happy to work with you on your technology platform of choice.  No one-size-fits-all, so we first seek to assess your technology needs.  The following are the technologies we use most frequently.</p>
 
                   <div className="image-collection">
-                    <img src="./static/images/csharp.png" style={{height:'6em', marginRight:'2em', marginBottom:'2em'}} />
-                    <img src="./static/images/nodejs.png" style={{height:'6em', marginRight:'2em', marginBottom:'2em'}} />
-                    <img src="./static/images/react.png" style={{height:'6em', marginRight:'2em', marginBottom:'2em'}} />
-                    <img src="./static/images/golang.png" style={{height:'6em', marginRight:'2em', marginBottom:'2em'}} />
-                    <img src="./static/images/azure.png" style={{height:'6em', marginRight:'2em', marginBottom:'2em'}} />
-                    <img src="./static/images/aws.png" style={{height:'6em', marginRight:'2em', marginBottom:'2em'}} />
+                    <img src="./static/images/csharp.png" style={{height:'6em', marginRight:'2em', marginBottom:'2em'}} alt='c sharp' />
+                    <img src="./static/images/nodejs.png" style={{height:'6em', marginRight:'2em', marginBottom:'2em'}} alt='node js' />
+                    <img src="./static/images/react.png" style={{height:'6em', marginRight:'2em', marginBottom:'2em'}} alt='react' />
+                    <img src="./static/images/golang.png" style={{height:'6em', marginRight:'2em', marginBottom:'2em'}} alt='golang' />
+                    <img src="./static/images/azure.png" style={{height:'6em', marginRight:'2em', marginBottom:'2em'}} alt='azure' />
+                    <img src="./static/images/aws.png" style={{height:'6em', marginRight:'2em', marginBottom:'2em'}} alt='a w s' />
                   </div>
 
                 </div>
@@ -167,7 +165,7 @@ const View = (props) => {
 
                   <div className="section">Customers</div>
 
-                  <img src="./static/images/steps.jpg" alt="Photo of Man Climbing Steps" className="img-responsive"  />
+                  <img src="./static/images/steps.jpg" alt="Man Climbing Steps" className="img-responsive"  />
                 </div>
               </div>
               <div className="row" style={{height:'10px'}}>
@@ -187,8 +185,8 @@ const View = (props) => {
 
                   <div className="image-collection">
 
-                    <img src="./static/images/govinvest.png" style={{height:'6em', marginRight:'2em', paddingBottom:'1em'}} />
-                    <img src="./static/images/payscale.png" style={{height:'12em', marginRight:'2em', paddingBottom:'1em'}} />
+                    <img src="./static/images/govinvest.png" style={{height:'6em', marginRight:'2em', paddingBottom:'1em'}} alt='gov invest'/>
+                    <img src="./static/images/payscale.png" style={{height:'12em', marginRight:'2em', paddingBottom:'1em'}} alt='payscale'/>
 
                     <p className="justify-cen">Thank you!</p>
 
@@ -206,7 +204,7 @@ const View = (props) => {
 
                   <div className="section">Team</div>
 
-                  <img src="./static/images/seattle.jpg" alt="Photo of Chess Pieces" className="img-responsive"  />
+                  <img src="./static/images/seattle.jpg" alt="Chess Pieces" className="img-responsive" />
                 </div>
               </div>
 
