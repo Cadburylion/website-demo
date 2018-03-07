@@ -5,11 +5,7 @@ import View from './view.js';
 class Landing extends React.Component {
   constructor(props){
     super(props);
-    this.state = {
-      position: 0,
-      isTop: false,
-      active: '',
-    };
+    this.state = {};
   }
   render(){
     return(

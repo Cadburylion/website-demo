@@ -1,10 +1,12 @@
 import React from 'react';
 import {Link, NavLink} from 'react-router-dom';
-import ScrollableAnchor from 'react-scrollable-anchor';
+import ScrollableAnchor, {configureAnchors} from 'react-scrollable-anchor';
 import Waypoint from 'react-waypoint';
 import Scrollspy from 'react-scrollspy';
 
 import './style.css';
+
+configureAnchors({offset: -38});
 
 const View = (props) => {
   return (
@@ -19,19 +21,19 @@ const View = (props) => {
                 <div className="container-fluid navbar-fixed-top">
                   <div className="col-xs-12 col-md-6">
                     <div className="hidden-xs hidden-sm hidden-md col-lg-3"></div>
-                    <div className="col-xs-12 col-lg-9" style={{backgroundColor:'#97BDDC', height:'30px', textAlign:'center', paddingTop: '2px'}}>
+                    <div className="col-xs-12 col-lg-9" style={{backgroundColor:'#5491C6', height:'40px', textAlign:'center', padding: '0.5em'}}>
 
 
-                      <Scrollspy items={['section-1', 'section-2', 'section-3', 'section-4']} currentClassName='is-current' style={{display: 'flex', flexFlow: 'row nowrap', alignItems: 'center', justifyContent: 'space-around', fontSize:'12px',fontFamily:'Muli sans-serif', paddingLeft: '0'}}>
-                        <a href='#services' style={{color: '#0C63AE', fontSize: '18px', fontFamily: 'Muli, sans-serif', marginBottom: '10px', textDecoration: 'none'}}> Services </a>
+                      <Scrollspy items={['section-1', 'section-2', 'section-3', 'section-4']} currentClassName='is-current' style={{display: 'flex', flexFlow: 'row nowrap', alignItems: 'center', justifyContent: 'space-around', fontSize:'12px',fontFamily:'Muli sans-serif', fontWeight: '700', paddingLeft: '0'}}>
+                        <a href='#services' style={{color: 'white', fontSize: '18px', fontFamily: 'Muli, sans-serif', marginBottom: '10px', textDecoration: 'none'}}> Services </a>
 
-                        <a href='#technologies' style={{color: '#0C63AE', fontSize: '18px', fontFamily: 'Muli, sans-serif', marginBottom: '10px', textDecoration: 'none'}}> Technologies </a>
+                        <a href='#technologies' style={{color: 'white', fontSize: '18px', fontFamily: 'Muli, sans-serif', marginBottom: '10px', textDecoration: 'none'}}> Technologies </a>
 
-                        <a href='#customers' style={{color: '#0C63AE', fontSize: '18px', fontFamily: 'Muli, sans-serif', marginBottom: '10px', textDecoration: 'none'}}> Customers </a>
+                        <a href='#customers' style={{color: 'white', fontSize: '18px', fontFamily: 'Muli, sans-serif', marginBottom: '10px', textDecoration: 'none'}}> Customers </a>
 
-                        <a href='#team' style={{color: '#0C63AE', fontSize: '18px', fontFamily: 'Muli, sans-serif', marginBottom: '10px', textDecoration: 'none'}}> Team </a>
+                        <a href='#team' style={{color: 'white', fontSize: '18px', fontFamily: 'Muli, sans-serif', marginBottom: '10px', textDecoration: 'none'}}> Team </a>
 
-                        <a href='https://medium.com/lenalysis' style={{color: '#0C63AE', fontSize: '18px', fontFamily: 'Muli, sans-serif', marginBottom: '10px', textDecoration: 'none'}}>Blog</a>
+                        <a href='https://medium.com/lenalysis' style={{color: 'white', fontSize: '18px', fontFamily: 'Muli, sans-serif', marginBottom: '10px', textDecoration: 'none'}}>Blog</a>
                       </Scrollspy>
                     </div>
                   </div>
@@ -65,64 +67,66 @@ const View = (props) => {
 
           <div className="col-xs-12 col-md-6 col-md-offset-6 rightside">
 
-            <ScrollableAnchor id='services'>
 
-              <div id='section-1'>
+            <div id='section-1'>
 
-                <div className="row">
-                  <div className="col-xs-12 col-lg-9">
-                    <div className="section">Services</div>
-                    <img src="./static/images/idea.jpg" alt="Chess Pieces" className="img-responsive"  />
-                  </div>
-                  <div className="hidden-xs hidden-sm hidden-md col-lg-3"></div>
+              <div className="row">
+                <div className="col-xs-12 col-lg-9">
+
+                  <div className="section">Services</div>
+
+                  <img src="./static/images/idea.jpg" alt="Chess Pieces" className="img-responsive"  />
                 </div>
-                <div className="row" style={{height:'10px'}}>
-                  <div className="col-xs-12 col-lg-9" style={{backgroundColor:'#f9b721', marginBottom: '-8px', height: '10px'}}>
-                    <img src="./static/images/yellow-dot.png" alt="dot" style={{marginTop:'-8px', float:'left', marginLeft:'-13px'}} className='dot' />
-                    <img src="./static/images/yellow-dot.png" alt="dot" style={{marginTop:'-8px', float: 'right', marginRight:'-13px'}} className="dot" />
-                  </div>
-                  <div className="hidden-xs hidden-sm hidden-md col-lg-3"></div>
+                <div className="hidden-xs hidden-sm hidden-md col-lg-3"></div>
+              </div>
+              <div className="row" style={{height:'10px'}}>
+                <div className="col-xs-12 col-lg-9" style={{backgroundColor:'#f9b721', marginBottom: '-8px', height: '10px'}}>
+                  <img src="./static/images/yellow-dot.png" alt="dot" style={{marginTop:'-8px', float:'left', marginLeft:'-13px'}} className='dot' />
+                  <img src="./static/images/yellow-dot.png" alt="dot" style={{marginTop:'-8px', float: 'right', marginRight:'-13px'}} className="dot" />
                 </div>
+                <div className="hidden-xs hidden-sm hidden-md col-lg-3"></div>
+              </div>
 
-                <div className="row">
-                  <div className="col-xs-12 col-lg-9 content content-short">
+              <div className="row">
+                <div className="col-xs-12 col-lg-9 content content-short">
+                  <ScrollableAnchor id='services'>
                     <h2>Services</h2>
+                  </ScrollableAnchor>
 
-                    <h3>Custom Development</h3>
-                    <p>Lenalysis provides top-quality custom software engineering.  We can jumpstart your journey developing a new solution.  We can also assist with major enhancements to existing applications.
+                  <h3>Custom Development</h3>
+                  <p>Lenalysis provides top-quality custom software engineering.  We can jumpstart your journey developing a new solution.  We can also assist with major enhancements to existing applications.
 
-                    Our team has developed hyper-scale mission-critical cloud solutions for global companies, built cutting-edge financial projection systems, and built many line-of-business enterprise apps.
-                    </p>
+                  Our team has developed hyper-scale mission-critical cloud solutions for global companies, built cutting-edge financial projection systems, and built many line-of-business enterprise apps.
+                  </p>
 
-                    <h3>Cloud Strategy and Implementation</h3>
-                    <p>It is important to make the right decisions at the start of your cloud journey.  We have been building cloud solutions for 8 years and can help you with your cloud needs.</p>
+                  <h3>Cloud Strategy and Implementation</h3>
+                  <p>It is important to make the right decisions at the start of your cloud journey.  We have been building cloud solutions for 8 years and can help you with your cloud needs.</p>
 
-                    <h3>Application Modernization</h3>
-                    <p>Realize the benefits of modern engineering practices with your legacy systems.  We can help you with automating testing, continuous integration, continuous development, static code analysis, and architectural strategy.</p>
+                  <h3>Application Modernization</h3>
+                  <p>Realize the benefits of modern engineering practices with your legacy systems.  We can help you with automating testing, continuous integration, continuous development, static code analysis, and architectural strategy.</p>
 
-                    <h3>System Integration</h3>
-                    <p>System integration can be difficult.  Let our multiple decades of experience in system integration help you achieve results with low-risk.</p>
+                  <h3>System Integration</h3>
+                  <p>System integration can be difficult.  Let our multiple decades of experience in system integration help you achieve results with low-risk.</p>
 
-                    <h3>Security Assessments</h3>
-                    <p>We can work with your teams to assess your current security practices and technology, and develop a comprehensive security improvement plan.</p>
+                  <h3>Security Assessments</h3>
+                  <p>We can work with your teams to assess your current security practices and technology, and develop a comprehensive security improvement plan.</p>
 
-                    <h3>Actuarial, Financial, and Accounting Software</h3>
-                    <p>Lenalysis can provide specialized expertise in the areas of actuarial, financial, and accounting software development.</p>
+                  <h3>Actuarial, Financial, and Accounting Software</h3>
+                  <p>Lenalysis can provide specialized expertise in the areas of actuarial, financial, and accounting software development.</p>
 
-                    <h3>Agile and DevOps</h3>
-                    <p>Regardless of where your team is on the agile and DevOps journey, let our expertise help you align your process to your business goals.  We can help with all flavors of agile, and can work with you on the various options of aligning your development and operations functions.</p>
-                  </div>
+                  <h3>Agile and DevOps</h3>
+                  <p>Regardless of where your team is on the agile and DevOps journey, let our expertise help you align your process to your business goals.  We can help with all flavors of agile, and can work with you on the various options of aligning your development and operations functions.</p>
                 </div>
               </div>
-            </ScrollableAnchor>
+            </div>
 
             <div id='section-2'>
 
               <div className="row right-section">
                 <div className="col-xs-12 col-lg-9">
-                  <ScrollableAnchor id='technologies'>
-                    <div className="section">Technologies</div>
-                  </ScrollableAnchor>
+
+                  <div className="section">Technologies</div>
+
                   <img src="./static/images/computer-with-code.jpg" alt="Photo of Computer with Code" className="img-responsive"  />
                 </div>
               </div>
@@ -136,7 +140,9 @@ const View = (props) => {
 
               <div className="row">
                 <div className="col-xs-12 col-lg-9 content content-short">
-                  <h2>Technologies</h2>
+                  <ScrollableAnchor id='technologies'>
+                    <h2>Technologies</h2>
+                  </ScrollableAnchor>
 
                   <p className="justify-cen">We are happy to work with you on your technology platform of choice.  No one-size-fits-all, so we first seek to assess your technology needs.  The following are the technologies we use most frequently.</p>
 
@@ -158,9 +164,9 @@ const View = (props) => {
             <div id='section-3'>
               <div className="row right-section">
                 <div className="col-xs-12 col-lg-9">
-                  <ScrollableAnchor id='customers'>
-                    <div className="section">Customers</div>
-                  </ScrollableAnchor>
+
+                  <div className="section">Customers</div>
+
                   <img src="./static/images/steps.jpg" alt="Photo of Man Climbing Steps" className="img-responsive"  />
                 </div>
               </div>
@@ -174,10 +180,12 @@ const View = (props) => {
 
               <div className="row">
                 <div className="col-xs-12 col-lg-9 content content-short">
-                  <h2>Our Customers</h2>
+
+                  <ScrollableAnchor id='customers'>
+                    <h2>Our Customers</h2>
+                  </ScrollableAnchor>
 
                   <div className="image-collection">
-
 
                     <img src="./static/images/govinvest.png" style={{height:'6em', marginRight:'2em', paddingBottom:'1em'}} />
                     <img src="./static/images/payscale.png" style={{height:'12em', marginRight:'2em', paddingBottom:'1em'}} />
@@ -195,9 +203,9 @@ const View = (props) => {
 
               <div className="row right-section">
                 <div className="col-xs-12 col-lg-9">
-                  <ScrollableAnchor id='team'>
-                    <div className="section">Team</div>
-                  </ScrollableAnchor>
+
+                  <div className="section">Team</div>
+
                   <img src="./static/images/seattle.jpg" alt="Photo of Chess Pieces" className="img-responsive"  />
                 </div>
               </div>
@@ -212,8 +220,9 @@ const View = (props) => {
               </div>
               <div className="row">
                 <div className="col-xs-12 col-lg-9 content content-short">
-
-                  <h2>Leadership Team</h2>
+                  <ScrollableAnchor id='team'>
+                    <h2>Leadership Team</h2>
+                  </ScrollableAnchor>
 
                   <img src="./static/images/kelly.jpg" style={{height:'6em'}} alt="Portrait of Kelly Leahy" className="img-responsive"  />
                   <h3>Kelly Leahy | <span className="title">Principal</span></h3>
