@@ -1,6 +1,10 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import {Link, NavLink} from 'react-router-dom';
 import ScrollableAnchor from 'react-scrollable-anchor';
+import Waypoint from 'react-waypoint';
+import Scrollspy from 'react-scrollspy';
+
+import './style.css';
 
 const View = (props) => {
   return (
@@ -16,17 +20,24 @@ const View = (props) => {
                   <div className="col-xs-12 col-md-6">
                     <div className="hidden-xs hidden-sm hidden-md col-lg-3"></div>
                     <div className="col-xs-12 col-lg-9" style={{backgroundColor:'#97BDDC', height:'30px', textAlign:'center', paddingTop: '2px'}}>
-                      <div style={{display: 'flex', flexFlow: 'row nowrap', alignItems: 'center', justifyContent: 'space-around', fontSize:'12px',fontFamily:'Muli sans-serif'}}>
-                        <a href='#services' style={{color: '#0C63AE', fontSize: '18px', fontFamily: 'Muli, sans-serif', marginBottom: '10px', textDecoration: 'none'}}>Services</a>
-                        <a href='#technologies' style={{color: '#0C63AE', fontSize: '18px', fontFamily: 'Muli, sans-serif', marginBottom: '10px', textDecoration: 'none'}}>Technologies</a>
-                        <a href='#customers' style={{color: '#0C63AE', fontSize: '18px', fontFamily: 'Muli, sans-serif', marginBottom: '10px', textDecoration: 'none'}}>Customers</a>
-                        <a href='#team' style={{color: '#0C63AE', fontSize: '18px', fontFamily: 'Muli, sans-serif', marginBottom: '10px', textDecoration: 'none'}}>Team</a>
-                        <Link to='/blog' style={{color: '#0C63AE', fontSize: '18px', fontFamily: 'Muli, sans-serif', marginBottom: '10px', textDecoration: 'none'}}>Blog</Link>
-                      </div>
+
+
+                      <Scrollspy items={['section-1', 'section-2', 'section-3', 'section-4']} currentClassName='is-current' style={{display: 'flex', flexFlow: 'row nowrap', alignItems: 'center', justifyContent: 'space-around', fontSize:'12px',fontFamily:'Muli sans-serif', paddingLeft: '0'}}>
+                        <a href='#services' style={{color: '#0C63AE', fontSize: '18px', fontFamily: 'Muli, sans-serif', marginBottom: '10px', textDecoration: 'none'}}> Services </a>
+
+                        <a href='#technologies' style={{color: '#0C63AE', fontSize: '18px', fontFamily: 'Muli, sans-serif', marginBottom: '10px', textDecoration: 'none'}}> Technologies </a>
+
+                        <a href='#customers' style={{color: '#0C63AE', fontSize: '18px', fontFamily: 'Muli, sans-serif', marginBottom: '10px', textDecoration: 'none'}}> Customers </a>
+
+                        <a href='#team' style={{color: '#0C63AE', fontSize: '18px', fontFamily: 'Muli, sans-serif', marginBottom: '10px', textDecoration: 'none'}}> Team </a>
+
+                        <a href='https://medium.com/lenalysis' style={{color: '#0C63AE', fontSize: '18px', fontFamily: 'Muli, sans-serif', marginBottom: '10px', textDecoration: 'none'}}>Blog</a>
+                      </Scrollspy>
                     </div>
                   </div>
                   <div className="hidden-xs col-md-6"></div>
                 </div>
+
                 <div className="col-xs-1"></div>
                 <div className="col-xs-10 logo">
                   <img src={require('../../static/images/Lenalysis_Logo.png')} className="img-responsive len-logo" alt="sample Logo" style={{margin:'48px auto'}} />
@@ -53,66 +64,76 @@ const View = (props) => {
 
 
           <div className="col-xs-12 col-md-6 col-md-offset-6 rightside">
-          
-            <div className="row">
-              <div className="col-xs-12 col-lg-9">
-                <div className="section">Services</div>
-                <img src="./static/images/idea.jpg" alt="Chess Pieces" className="img-responsive"  />
-              </div>
-              <div className="hidden-xs hidden-sm hidden-md col-lg-3"></div>
-            </div>
-            <div className="row" style={{height:'10px'}}>
-              <div className="col-xs-12 col-lg-9" style={{backgroundColor:'#f9b721', marginBottom: '-8px', height: '10px'}}>
-                <img src="./static/images/yellow-dot.png" alt="dot" style={{marginTop:'-8px', float:'left', marginLeft:'-13px'}} className='dot' />
-                <img src="./static/images/yellow-dot.png" alt="dot" style={{marginTop:'-8px', float: 'right', marginRight:'-13px'}} className="dot" />
-              </div>
-              <div className="hidden-xs hidden-sm hidden-md col-lg-3"></div>
-            </div>
+
             <ScrollableAnchor id='services'>
-              <div className="row">
-                <div className="col-xs-12 col-lg-9 content content-short">
-                  <h2>Services</h2>
 
-                  <h3>Custom Development</h3>
-                  <p>Lenalysis provides top-quality custom software engineering.  We can jumpstart your journey developing a new solution.  We can also assist with major enhancements to existing applications.
+              <div id='section-1'>
 
-                  Our team has developed hyper-scale mission-critical cloud solutions for global companies, built cutting-edge financial projection systems, and built many line-of-business enterprise apps.
-                  </p>
+                <div className="row">
+                  <div className="col-xs-12 col-lg-9">
+                    <div className="section">Services</div>
+                    <img src="./static/images/idea.jpg" alt="Chess Pieces" className="img-responsive"  />
+                  </div>
+                  <div className="hidden-xs hidden-sm hidden-md col-lg-3"></div>
+                </div>
+                <div className="row" style={{height:'10px'}}>
+                  <div className="col-xs-12 col-lg-9" style={{backgroundColor:'#f9b721', marginBottom: '-8px', height: '10px'}}>
+                    <img src="./static/images/yellow-dot.png" alt="dot" style={{marginTop:'-8px', float:'left', marginLeft:'-13px'}} className='dot' />
+                    <img src="./static/images/yellow-dot.png" alt="dot" style={{marginTop:'-8px', float: 'right', marginRight:'-13px'}} className="dot" />
+                  </div>
+                  <div className="hidden-xs hidden-sm hidden-md col-lg-3"></div>
+                </div>
 
-                  <h3>Cloud Strategy and Implementation</h3>
-                  <p>It is important to make the right decisions at the start of your cloud journey.  We have been building cloud solutions for 8 years and can help you with your cloud needs.</p>
+                <div className="row">
+                  <div className="col-xs-12 col-lg-9 content content-short">
+                    <h2>Services</h2>
 
-                  <h3>Application Modernization</h3>
-                  <p>Realize the benefits of modern engineering practices with your legacy systems.  We can help you with automating testing, continuous integration, continuous development, static code analysis, and architectural strategy.</p>
+                    <h3>Custom Development</h3>
+                    <p>Lenalysis provides top-quality custom software engineering.  We can jumpstart your journey developing a new solution.  We can also assist with major enhancements to existing applications.
 
-                  <h3>System Integration</h3>
-                  <p>System integration can be difficult.  Let our multiple decades of experience in system integration help you achieve results with low-risk.</p>
+                    Our team has developed hyper-scale mission-critical cloud solutions for global companies, built cutting-edge financial projection systems, and built many line-of-business enterprise apps.
+                    </p>
 
-                  <h3>Security Assessments</h3>
-                  <p>We can work with your teams to assess your current security practices and technology, and develop a comprehensive security improvement plan.</p>
+                    <h3>Cloud Strategy and Implementation</h3>
+                    <p>It is important to make the right decisions at the start of your cloud journey.  We have been building cloud solutions for 8 years and can help you with your cloud needs.</p>
 
-                  <h3>Actuarial, Financial, and Accounting Software</h3>
-                  <p>Lenalysis can provide specialized expertise in the areas of actuarial, financial, and accounting software development.</p>
+                    <h3>Application Modernization</h3>
+                    <p>Realize the benefits of modern engineering practices with your legacy systems.  We can help you with automating testing, continuous integration, continuous development, static code analysis, and architectural strategy.</p>
 
-                  <h3>Agile and DevOps</h3>
-                  <p>Regardless of where your team is on the agile and DevOps journey, let our expertise help you align your process to your business goals.  We can help with all flavors of agile, and can work with you on the various options of aligning your development and operations functions.</p>
+                    <h3>System Integration</h3>
+                    <p>System integration can be difficult.  Let our multiple decades of experience in system integration help you achieve results with low-risk.</p>
+
+                    <h3>Security Assessments</h3>
+                    <p>We can work with your teams to assess your current security practices and technology, and develop a comprehensive security improvement plan.</p>
+
+                    <h3>Actuarial, Financial, and Accounting Software</h3>
+                    <p>Lenalysis can provide specialized expertise in the areas of actuarial, financial, and accounting software development.</p>
+
+                    <h3>Agile and DevOps</h3>
+                    <p>Regardless of where your team is on the agile and DevOps journey, let our expertise help you align your process to your business goals.  We can help with all flavors of agile, and can work with you on the various options of aligning your development and operations functions.</p>
+                  </div>
                 </div>
               </div>
             </ScrollableAnchor>
 
-            <div className="row right-section">
-              <div className="col-xs-12 col-lg-9">
-                <div className="section">Technologies</div>
-                <img src="./static/images/computer-with-code.jpg" alt="Photo of Computer with Code" className="img-responsive"  />
+            <div id='section-2'>
+
+              <div className="row right-section">
+                <div className="col-xs-12 col-lg-9">
+                  <ScrollableAnchor id='technologies'>
+                    <div className="section">Technologies</div>
+                  </ScrollableAnchor>
+                  <img src="./static/images/computer-with-code.jpg" alt="Photo of Computer with Code" className="img-responsive"  />
+                </div>
               </div>
-            </div>
-            <div className="row" style={{height:'10px'}}>
-              <div className="col-xs-12 col-lg-9" style={{backgroundColor:'#f9b721', marginBottom:'-8px', height: '10px'}}>
-                <img src="./static/images/yellow-dot.png" alt="dot" style={{marginTop:'-8px', float: 'left', marginLeft: '-13px'}} className="dot" />
-                <img src="./static/images/yellow-dot.png" alt="dot" style={{marginTop:'-8px', float:'right', marginRight:'-13px'}} className="dot" />
+              <div className="row" style={{height:'10px'}}>
+                <div className="col-xs-12 col-lg-9" style={{backgroundColor:'#f9b721', marginBottom:'-8px', height: '10px'}}>
+                  <img src="./static/images/yellow-dot.png" alt="dot" style={{marginTop:'-8px', float: 'left', marginLeft: '-13px'}} className="dot" />
+                  <img src="./static/images/yellow-dot.png" alt="dot" style={{marginTop:'-8px', float:'right', marginRight:'-13px'}} className="dot" />
+                </div>
               </div>
-            </div>
-            <ScrollableAnchor id='technologies'>
+
+
               <div className="row">
                 <div className="col-xs-12 col-lg-9 content content-short">
                   <h2>Technologies</h2>
@@ -130,21 +151,27 @@ const View = (props) => {
 
                 </div>
               </div>
-            </ScrollableAnchor>
 
-            <div className="row right-section">
-              <div className="col-xs-12 col-lg-9">
-                <div className="section">Customers</div>
-                <img src="./static/images/steps.jpg" alt="Photo of Man Climbing Steps" className="img-responsive"  />
-              </div>
             </div>
-            <div className="row" style={{height:'10px'}}>
-              <div className="col-xs-12 col-lg-9" style={{backgroundColor:'#f9b721', marginBottom:'-8px', height:'10px'}}>
-                <img src="./static/images/yellow-dot.png" alt="dot" style={{marginTop:'-8px',float:'left',marginLeft:'-13px'}} className="dot" />
-                <img src="./static/images/yellow-dot.png" alt="dot" style={{marginTop:'-8px',float:'right',marginRight:'-13px'}} className="dot" />
+
+
+            <div id='section-3'>
+              <div className="row right-section">
+                <div className="col-xs-12 col-lg-9">
+                  <ScrollableAnchor id='customers'>
+                    <div className="section">Customers</div>
+                  </ScrollableAnchor>
+                  <img src="./static/images/steps.jpg" alt="Photo of Man Climbing Steps" className="img-responsive"  />
+                </div>
               </div>
-            </div>
-            <ScrollableAnchor id='customers'>
+              <div className="row" style={{height:'10px'}}>
+                <div className="col-xs-12 col-lg-9" style={{backgroundColor:'#f9b721', marginBottom:'-8px', height:'10px'}}>
+                  <img src="./static/images/yellow-dot.png" alt="dot" style={{marginTop:'-8px',float:'left',marginLeft:'-13px'}} className="dot" />
+                  <img src="./static/images/yellow-dot.png" alt="dot" style={{marginTop:'-8px',float:'right',marginRight:'-13px'}} className="dot" />
+                </div>
+              </div>
+
+
               <div className="row">
                 <div className="col-xs-12 col-lg-9 content content-short">
                   <h2>Our Customers</h2>
@@ -161,21 +188,28 @@ const View = (props) => {
 
                 </div>
               </div>
-            </ScrollableAnchor>
 
-            <div className="row right-section">
-              <div className="col-xs-12 col-lg-9">
-                <div className="section">Team</div>
-                <img src="./static/images/seattle.jpg" alt="Photo of Chess Pieces" className="img-responsive"  />
-              </div>
             </div>
-            <div className="row" style={{height:'10px'}}>
-              <div className="col-xs-12 col-lg-9" style={{backgroundColor:'#f9b721', marginBottom:'-8px', height:'10px'}}>
-                <img src="./static/images/yellow-dot.png" alt="dot" style={{marginTop:'-8px', float:'left', marginLeft:'-13px'}} className="dot" />
-                <img src="./static/images/yellow-dot.png" alt="dot" style={{marginTop:'-8px', float:'right', marginRight:'-13px'}} className="dot" />
+
+            <div id='section-4'>
+
+              <div className="row right-section">
+                <div className="col-xs-12 col-lg-9">
+                  <ScrollableAnchor id='team'>
+                    <div className="section">Team</div>
+                  </ScrollableAnchor>
+                  <img src="./static/images/seattle.jpg" alt="Photo of Chess Pieces" className="img-responsive"  />
+                </div>
               </div>
-            </div>
-            <ScrollableAnchor id='team'>
+
+
+
+              <div className="row" style={{height:'10px'}}>
+                <div className="col-xs-12 col-lg-9" style={{backgroundColor:'#f9b721', marginBottom:'-8px', height:'10px'}}>
+                  <img src="./static/images/yellow-dot.png" alt="dot" style={{marginTop:'-8px', float:'left', marginLeft:'-13px'}} className="dot" />
+                  <img src="./static/images/yellow-dot.png" alt="dot" style={{marginTop:'-8px', float:'right', marginRight:'-13px'}} className="dot" />
+                </div>
+              </div>
               <div className="row">
                 <div className="col-xs-12 col-lg-9 content content-short">
 
@@ -186,14 +220,16 @@ const View = (props) => {
                   <p>Kelly holds a Master’s degree in Computer Science and a Bachelor’s Degree in Actuarial Science. Kelly has a rare combination of financial systems and software development expertise.  His 18 years of experience developing financial applications has included delivering mission critical financial reporting systems, as well as large-scale cloud applications, using advanced event-oriented patterns that enable accountability and scalability.</p>
                 </div>
               </div>
-            </ScrollableAnchor>
-            <div className="row">
-              <div className="col-xs-12 col-lg-9 content">
-                <img src="./static/images/adrian.jpg" style={{height:'8em'}} alt="Portrait of Adrian Withy" className="img-responsive"  />
-                <h3>Adrian Withy | <span className="title">Principal</span></h3>
-                <p>Adrian is an expert software architect and delivery manager.  Most recently, Adrian was a Group Manager at Avanade, a leading global consultancy.  There he architected and delivered large software projects for global 100 companies.  Prior to Avanade, Adrian was a Product Owner at Milliman, where he coordinated product development for multiple actuarial software systems.  Adrian has more than 12 years of professional software development experience, and maintains a high level of technical and delivery management expertise.
-                </p>
+
+              <div className="row">
+                <div className="col-xs-12 col-lg-9 content">
+                  <img src="./static/images/adrian.jpg" style={{height:'8em'}} alt="Portrait of Adrian Withy" className="img-responsive"  />
+                  <h3>Adrian Withy | <span className="title">Principal</span></h3>
+                  <p>Adrian is an expert software architect and delivery manager.  Most recently, Adrian was a Group Manager at Avanade, a leading global consultancy.  There he architected and delivered large software projects for global 100 companies.  Prior to Avanade, Adrian was a Product Owner at Milliman, where he coordinated product development for multiple actuarial software systems.  Adrian has more than 12 years of professional software development experience, and maintains a high level of technical and delivery management expertise.
+                  </p>
+                </div>
               </div>
+
             </div>
 
             <div className="row justify-cen">
@@ -201,13 +237,10 @@ const View = (props) => {
                 <a href="mailto:info@lenalysis.com"><img src="./static/images/icon-email.png" alt="map icon" style={{marginRight:'2em'}} className="justify-cen" />  Contact Us</a>
               </div>
             </div>
-
           </div>
         </div>
 
-
       </div>
-
 
       <div className="container-fluid navbar-fixed-bottom">
         <div className="col-xs-12 col-md-6">
