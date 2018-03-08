@@ -19,19 +19,19 @@ const View = (props) => {
                 <div className="container-fluid navbar-fixed-top">
                   <div className="col-xs-12 col-md-6">
                     <div className="hidden-xs hidden-sm hidden-md col-lg-3"></div>
-                    <div className="col-xs-12 col-lg-9" style={{backgroundColor:'#5491C6', height:'40px', textAlign:'center', padding: '0.5em'}}>
+                    <div className="col-xs-12 col-lg-9" style={{display: 'flex', alignItems: 'center', backgroundColor:'#0063AF', height:'50px', textAlign:'center', padding: '0.5em'}}>
 
 
-                      <Scrollspy items={['section-1', 'section-2', 'section-3', 'section-4']} currentClassName='is-current' style={{display: 'flex', flexFlow: 'row nowrap', alignItems: 'center', justifyContent: 'space-around', fontSize:'12px',fontFamily:'Muli sans-serif', fontWeight: '700', paddingLeft: '0'}}>
-                        <a href='#services' style={{color: 'white', fontSize: '18px', fontFamily: 'Muli, sans-serif', marginBottom: '10px', textDecoration: 'none'}}> Services </a>
+                      <Scrollspy items={['section-1', 'section-2', 'section-3', 'section-4']} currentClassName='is-current' style={{display: 'flex', width: '100%', flexFlow: 'row nowrap', alignItems: 'center', justifyContent: 'space-around', fontSize:'12px', fontFamily:'Muli sans-serif', paddingLeft: '0', marginBottom: '0px'}}>
+                        <a href='#services' style={{color: 'white', fontSize: '16px', fontFamily: 'Muli, sans-serif', textDecoration: 'none'}}> Services </a>
 
-                        <a href='#technologies' style={{color: 'white', fontSize: '18px', fontFamily: 'Muli, sans-serif', marginBottom: '10px', textDecoration: 'none'}}> Technologies </a>
+                        <a href='#technologies' style={{color: 'white', fontSize: '16px', fontFamily: 'Muli, sans-serif', textDecoration: 'none'}}> Technologies </a>
 
-                        <a href='#customers' style={{color: 'white', fontSize: '18px', fontFamily: 'Muli, sans-serif', marginBottom: '10px', textDecoration: 'none'}}> Customers </a>
+                        <a href='#customers' style={{color: 'white', fontSize: '16px', fontFamily: 'Muli, sans-serif', textDecoration: 'none'}}> Customers </a>
 
-                        <a href='#team' style={{color: 'white', fontSize: '18px', fontFamily: 'Muli, sans-serif', marginBottom: '10px', textDecoration: 'none'}}> Team </a>
+                        <a href='#team' style={{color: 'white', fontSize: '16px', fontFamily: 'Muli, sans-serif', textDecoration: 'none'}}> Team </a>
 
-                        <a href='https://medium.com/lenalysis' style={{color: 'white', fontSize: '18px', fontFamily: 'Muli, sans-serif', marginBottom: '10px', textDecoration: 'none'}}>Blog</a>
+                        <a href='https://medium.com/lenalysis' style={{color: 'white', fontSize: '16px', fontFamily: 'Muli, sans-serif', textDecoration: 'none'}}>Blog</a>
                       </Scrollspy>
                     </div>
                   </div>
