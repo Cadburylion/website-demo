@@ -4,8 +4,6 @@ import Scrollspy from 'react-scrollspy';
 
 import './style.css';
 
-configureAnchors({offset: -38});
-
 const View = (props) => {
   return (
     <React.Fragment>
@@ -72,8 +70,9 @@ const View = (props) => {
                 <div className="col-xs-12 col-lg-9">
 
                   <div className="section">Services</div>
-
-                  <img src="./static/images/idea.jpg" alt="Chess Pieces" className="img-responsive"  />
+                  <ScrollableAnchor id='services'>
+                    <img src="./static/images/idea.jpg" alt="Chess Pieces" className="img-responsive"  />
+                  </ScrollableAnchor>
                 </div>
                 <div className="hidden-xs hidden-sm hidden-md col-lg-3"></div>
               </div>
@@ -87,9 +86,8 @@ const View = (props) => {
 
               <div className="row">
                 <div className="col-xs-12 col-lg-9 content content-short">
-                  <ScrollableAnchor id='services'>
-                    <h2>Services</h2>
-                  </ScrollableAnchor>
+
+                  <h2>Services</h2>
 
                   <h3>Custom Development</h3>
                   <p>Lenalysis provides top-quality custom software engineering.  We can jumpstart your journey developing a new solution.  We can also assist with major enhancements to existing applications.
@@ -125,7 +123,10 @@ const View = (props) => {
 
                   <div className="section">Technologies</div>
 
-                  <img src="./static/images/computer-with-code.jpg" alt="Computer with Code" className="img-responsive"  />
+                  <ScrollableAnchor id='technologies'>
+                    <img src="./static/images/computer-with-code.jpg" alt="Computer with Code" className="img-responsive"  />
+                  </ScrollableAnchor>
+
                 </div>
               </div>
               <div className="row" style={{height:'10px'}}>
@@ -138,9 +139,8 @@ const View = (props) => {
 
               <div className="row">
                 <div className="col-xs-12 col-lg-9 content content-short">
-                  <ScrollableAnchor id='technologies'>
-                    <h2>Technologies</h2>
-                  </ScrollableAnchor>
+
+                  <h2>Technologies</h2>
 
                   <p className="justify-cen">We are happy to work with you on your technology platform of choice.  No one-size-fits-all, so we first seek to assess your technology needs.  The following are the technologies we use most frequently.</p>
 
@@ -165,7 +165,10 @@ const View = (props) => {
 
                   <div className="section">Customers</div>
 
-                  <img src="./static/images/steps.jpg" alt="Man Climbing Steps" className="img-responsive"  />
+                  <ScrollableAnchor id='customers'>
+                    <img src="./static/images/steps.jpg" alt="Man Climbing Steps" className="img-responsive"  />
+                  </ScrollableAnchor>
+
                 </div>
               </div>
               <div className="row" style={{height:'10px'}}>
@@ -179,9 +182,7 @@ const View = (props) => {
               <div className="row">
                 <div className="col-xs-12 col-lg-9 content content-short">
 
-                  <ScrollableAnchor id='customers'>
-                    <h2>Our Customers</h2>
-                  </ScrollableAnchor>
+                  <h2>Our Customers</h2>
 
                   <div className="image-collection">
 
@@ -204,7 +205,10 @@ const View = (props) => {
 
                   <div className="section">Team</div>
 
-                  <img src="./static/images/seattle.jpg" alt="Chess Pieces" className="img-responsive" />
+                  <ScrollableAnchor id='team'>
+                    <img src="./static/images/seattle.jpg" alt="Chess Pieces" className="img-responsive" />
+                  </ScrollableAnchor>
+
                 </div>
               </div>
 
@@ -218,9 +222,8 @@ const View = (props) => {
               </div>
               <div className="row">
                 <div className="col-xs-12 col-lg-9 content content-short">
-                  <ScrollableAnchor id='team'>
-                    <h2>Leadership Team</h2>
-                  </ScrollableAnchor>
+
+                  <h2>Leadership Team</h2>
 
                   <img src="./static/images/kelly.jpg" style={{height:'6em'}} alt="Portrait of Kelly Leahy" className="img-responsive"  />
                   <h3>Kelly Leahy | <span className="title">Principal</span></h3>
