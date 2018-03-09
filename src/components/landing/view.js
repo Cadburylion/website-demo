@@ -40,7 +40,7 @@ const View = (props) => {
 
                 <div className="col-xs-1"></div>
                 <div className="col-xs-10 logo">
-                  <img src={require('../../static/images/Lenalysis_Logo.png')} className="img-responsive len-logo" alt="sample Logo" style={{margin:'48px auto'}} />
+                  <img src={'./static/images/Lenalysis_Logo.png'} className="img-responsive len-logo" alt="sample Logo" style={{margin:'48px auto'}} />
                   <h1>Results-oriented software and cloud consulting services</h1>
                   <h2>Lenalysis provides innovative consulting services to enterprises and start-ups.</h2>
                   <p className="justify-cen">{`Lenalysis is a software consultancy specializing in custom software development, cloud, system integration, agile, and DevOps.
