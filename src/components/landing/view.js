@@ -14,11 +14,11 @@ const View = (props) => {
             <div className="hidden-xs hidden-sm hidden-md col-lg-3"></div>
             <div className="col-xs-12 col-lg-9 leftsideimg">
               <div className="row">
+
                 <div className="container-fluid navbar-fixed-top">
                   <div className="col-xs-12 col-md-6">
                     <div className="hidden-xs hidden-sm hidden-md col-lg-3"></div>
                     <div className="col-xs-12 col-lg-9" style={{display: 'flex', alignItems: 'center', backgroundColor:'#0063AF', height:'50px', textAlign:'center', padding: '0.5em'}}>
-
 
                       <Scrollspy items={['section-1', 'section-2', 'section-3', 'section-4']} currentClassName='is-current' style={{display: 'flex', width: '100%', flexFlow: 'row nowrap', alignItems: 'center', justifyContent: 'space-around', fontSize:'12px', fontFamily:'Muli sans-serif', paddingLeft: '0', marginBottom: '0px'}}>
                         <a href='#services' style={{color: 'white', fontSize: '16px', fontFamily: 'Muli, sans-serif', textDecoration: 'none'}}> Services </a>
@@ -31,6 +31,7 @@ const View = (props) => {
 
                         <a href='https://medium.com/lenalysis' style={{color: 'white', fontSize: '16px', fontFamily: 'Muli, sans-serif', textDecoration: 'none'}}>Blog</a>
                       </Scrollspy>
+                      
                     </div>
                   </div>
                   <div className="hidden-xs col-md-6"></div>

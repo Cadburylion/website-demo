@@ -1,5 +1,7 @@
 .is-current {
-  /*color: white !important;*/
   color: #F9B725 !important;
-  /*font-weight: 700;*/
+}
+
+.row {
+  overflow: hidden !important;
 }
